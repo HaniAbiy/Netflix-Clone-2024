@@ -1,13 +1,16 @@
 import { useState } from 'react'
 
 import './App.css'
+import MainPage from './MainPage/MainPage'
+
 
 function App() {
  
 
   return (
     <>
-     <h1>Netflix Home</h1>
+     <MainPage/>
+    
     </>
   )
 }

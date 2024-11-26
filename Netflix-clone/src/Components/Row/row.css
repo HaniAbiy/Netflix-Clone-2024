@@ -1,0 +1,44 @@
+.row_Container{
+    /* display: flex; */
+    color: white;
+    margin-left: 20px; 
+    /* the margin helps to give the left side a space  */
+}
+
+.row__Posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* overflow add the scroll opetion on the x or horizontal line we can also add on the y axies  */
+    padding: 20px;
+  /* padding  helps to pop up the posters better not cut the pictures  */
+}
+
+.row__Posters::-webkit-scrollbar {
+    display: none;
+}  
+/* this means keep the scroll bar but not show it or not visible */
+
+.row__poster{ 
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    /* transform helps to transit when we click on the images - it slowley  */
+} 
+
+.row__poster:hover {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.row__posterLarge {
+    max-height: 250px;
+}
+
+.row__posterLarge:hover {
+    transform: scale(1.09);
+    opacity: 1;
+}
+ 

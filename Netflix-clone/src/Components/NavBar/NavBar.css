@@ -1,0 +1,53 @@
+
+ .nav-container{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    background-color: rgb(19, 14, 13);
+   
+    color: white;
+    height: 10vh;  
+    width: 100%;
+     z-index: 1; 
+        /* z index  helps to transparnt and when we start to scroll in certain limit the black starts to show */
+   
+    background-color: transparent;
+    /* animation - it helps t0 fade in slowley on transaction  */ 
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+ 
+ }
+
+ 
+ .navContent{ 
+    position: fixed; 
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* background-color: black; */
+    width: 90%;
+       
+ }
+.nav-left ul{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+     width: 130%;
+   
+}
+.nav-right ul{
+    /* position: fixed; */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 130%;
+      list-style: none;
+      /* right: 20px; */
+      cursor: pointer;
+
+}

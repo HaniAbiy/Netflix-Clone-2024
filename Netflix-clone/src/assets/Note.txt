@@ -1,0 +1,22 @@
+ ---- create Netflix clone ------
+STEPS
+ 1- create 
+ 2- Get TMDB API key
+ 3- Build header and footer
+ 4- Build banner
+ 5- Build the rows
+ 6- build nav bar
+ 7- Bring the icons
+ 8- construct HTML and CSS 
+ 9- commit and push after each work
+ 10- use Axios 
+
+
+ API key 88ac9d3b8675e7d623d1e97b20b69248
+ 
+ 
+https://api.themoviedb.org/3/movie/popular?api_key=88ac9d3b8675e7d623d1e97b20b69248
+
+
+
+ <div className="bannerFade" /> 
