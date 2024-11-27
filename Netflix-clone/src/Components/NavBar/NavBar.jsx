@@ -14,7 +14,7 @@ function NavBar() {
         <div className="nav-left">
           <ul>
             <li>
-              <img src={NetflixLogo} alt="Nlogo" width="100" />
+              <img src={NetflixLogo} alt="Nlogo" width="110" />
             </li>
             <li>Home</li>
             <li>TV Shows</li>

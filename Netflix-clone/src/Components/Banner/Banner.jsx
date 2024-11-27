@@ -22,30 +22,32 @@ function Banner() {
     }
 
   return (
-    <header>
-      <div
-        className="banner"
-        style={{
-          backgroundSize: "cover",
-          backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="conetnt">
-          <h1 className="title">
-            {movie?.title || movie?.name || movie?.original_name}
-          </h1>
-          <div className="banner_button">
-            <button>Play</button>
-            {/* <br /> */}
-            <button>My List</button>
-          </div>
-          <h3 className="description">{truncate(movie?.overview, 150)}</h3>
+    <div
+      className="banner"
+      style={{
+        backgroundSize: "cover",
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="conetnt">
+        <h1 className="title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
+        <div className="banner_button">
+          <button className="play">Play</button>
+          {/* <br /> */}
+          <button>My List</button>
         </div>
-        {/* <div className="bannerFade" /> */}
+        <div>
+          <h1 className="description">{truncate(movie?.overview, 150)}</h1>
+        </div>
       </div>
-    </header>
+   
+        <div className="bannerFade" />
+    
+    </div>
   );
 }
 
