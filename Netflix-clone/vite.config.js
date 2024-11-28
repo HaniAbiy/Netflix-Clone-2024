@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:'/Netfix-clone-2024/',
-})
+  base: "/Netflix-clone-2024/",
+});
